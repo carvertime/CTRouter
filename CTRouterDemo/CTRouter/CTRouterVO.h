@@ -17,5 +17,6 @@
 @property (nonatomic, assign) BOOL animationNone;
 @property (nonatomic, assign) BOOL nib;
 @property (nonatomic, assign) BOOL pop;
+@property (nonatomic, assign) BOOL modal;
 
 @end

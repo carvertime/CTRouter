@@ -16,5 +16,6 @@
 @property (nonatomic, copy) CTRouterMaker *(^param)(NSDictionary *param);
 @property (nonatomic, copy) CTRouterMaker *(^animationNone)(BOOL animationNone);
 @property (nonatomic, copy) CTRouterMaker *(^nib)(BOOL nib);
+@property (nonatomic, copy) CTRouterMaker *(^modal)(BOOL modal);
 
 @end

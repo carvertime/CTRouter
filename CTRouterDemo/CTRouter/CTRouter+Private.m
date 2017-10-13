@@ -40,7 +40,14 @@
     }
     NSParameterAssert(viewController);
     viewController.extraData = routerVO.param ?: @{};
-    [nav pushViewController:viewController animated:!routerVO.animationNone];
+    if (routerVO.modal) {
+        [nav presentViewController:viewController animated:!routerVO.animationNone completion:nil];
+    } else {
+        if (nav.presentedViewController) {
+            [nav dismissViewControllerAnimated:NO completion:nil];
+        }
+        [nav pushViewController:viewController animated:!routerVO.animationNone];
+    }
 }
 
 - (UINavigationController *)getNavigationController{

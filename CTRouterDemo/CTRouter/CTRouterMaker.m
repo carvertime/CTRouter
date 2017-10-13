@@ -65,4 +65,11 @@
     };
 }
 
+- (CTRouterMaker *(^)(BOOL))modal{
+    return ^(BOOL modal) {
+        self.routerVO.modal = modal;
+        return self;
+    };
+}
+
 @end

@@ -21,6 +21,10 @@
 		69EF9E421F9096AE00D242D7 /* CTRouterMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EF9E391F9096AE00D242D7 /* CTRouterMaker.m */; };
 		69EF9E431F9096AE00D242D7 /* CTRouterVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EF9E3C1F9096AE00D242D7 /* CTRouterVO.m */; };
 		69EF9E441F9096AE00D242D7 /* UIViewController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EF9E3E1F9096AE00D242D7 /* UIViewController+Router.m */; };
+		69EF9E471F90980300D242D7 /* NextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EF9E461F90980300D242D7 /* NextVC.m */; };
+		69EF9E4A1F9099F900D242D7 /* ModalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EF9E491F9099F900D242D7 /* ModalVC.m */; };
+		69EF9E4E1F909B3F00D242D7 /* XibVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EF9E4C1F909B3F00D242D7 /* XibVC.m */; };
+		69EF9E4F1F909B3F00D242D7 /* XibVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69EF9E4D1F909B3F00D242D7 /* XibVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,13 @@
 		69EF9E3C1F9096AE00D242D7 /* CTRouterVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRouterVO.m; sourceTree = "<group>"; };
 		69EF9E3D1F9096AE00D242D7 /* UIViewController+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Router.h"; sourceTree = "<group>"; };
 		69EF9E3E1F9096AE00D242D7 /* UIViewController+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Router.m"; sourceTree = "<group>"; };
+		69EF9E451F90980300D242D7 /* NextVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextVC.h; sourceTree = "<group>"; };
+		69EF9E461F90980300D242D7 /* NextVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextVC.m; sourceTree = "<group>"; };
+		69EF9E481F9099F900D242D7 /* ModalVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalVC.h; sourceTree = "<group>"; };
+		69EF9E491F9099F900D242D7 /* ModalVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalVC.m; sourceTree = "<group>"; };
+		69EF9E4B1F909B3F00D242D7 /* XibVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibVC.h; sourceTree = "<group>"; };
+		69EF9E4C1F909B3F00D242D7 /* XibVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibVC.m; sourceTree = "<group>"; };
+		69EF9E4D1F909B3F00D242D7 /* XibVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +137,13 @@
 				69EF9E011F90967B00D242D7 /* AppDelegate.m */,
 				69EF9E031F90967B00D242D7 /* ViewController.h */,
 				69EF9E041F90967B00D242D7 /* ViewController.m */,
+				69EF9E451F90980300D242D7 /* NextVC.h */,
+				69EF9E461F90980300D242D7 /* NextVC.m */,
+				69EF9E481F9099F900D242D7 /* ModalVC.h */,
+				69EF9E491F9099F900D242D7 /* ModalVC.m */,
+				69EF9E4B1F909B3F00D242D7 /* XibVC.h */,
+				69EF9E4C1F909B3F00D242D7 /* XibVC.m */,
+				69EF9E4D1F909B3F00D242D7 /* XibVC.xib */,
 				69EF9E061F90967B00D242D7 /* Main.storyboard */,
 				69EF9E091F90967B00D242D7 /* Assets.xcassets */,
 				69EF9E0B1F90967B00D242D7 /* LaunchScreen.storyboard */,
@@ -290,6 +308,7 @@
 			files = (
 				69EF9E0D1F90967B00D242D7 /* LaunchScreen.storyboard in Resources */,
 				69EF9E0A1F90967B00D242D7 /* Assets.xcassets in Resources */,
+				69EF9E4F1F909B3F00D242D7 /* XibVC.xib in Resources */,
 				69EF9E081F90967B00D242D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,9 +335,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				69EF9E051F90967B00D242D7 /* ViewController.m in Sources */,
+				69EF9E4A1F9099F900D242D7 /* ModalVC.m in Sources */,
 				69EF9E421F9096AE00D242D7 /* CTRouterMaker.m in Sources */,
 				69EF9E401F9096AE00D242D7 /* CTRouter+Public.m in Sources */,
+				69EF9E471F90980300D242D7 /* NextVC.m in Sources */,
 				69EF9E441F9096AE00D242D7 /* UIViewController+Router.m in Sources */,
+				69EF9E4E1F909B3F00D242D7 /* XibVC.m in Sources */,
 				69EF9E021F90967B00D242D7 /* AppDelegate.m in Sources */,
 				69EF9E431F9096AE00D242D7 /* CTRouterVO.m in Sources */,
 				69EF9DFF1F90967B00D242D7 /* main.m in Sources */,
