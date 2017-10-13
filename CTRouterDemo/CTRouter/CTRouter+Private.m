@@ -43,9 +43,7 @@
     if (routerVO.modal) {
         [nav presentViewController:viewController animated:!routerVO.animationNone completion:nil];
     } else {
-        if (nav.presentedViewController) {
-            [nav dismissViewControllerAnimated:NO completion:nil];
-        }
+        [nav.presentedViewController dismissViewControllerAnimated:NO completion:nil];
         [nav pushViewController:viewController animated:!routerVO.animationNone];
     }
 }
