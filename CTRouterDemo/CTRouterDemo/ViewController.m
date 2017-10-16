@@ -18,17 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [[CTRouter sharedInstance] ct_makeRouters:^(CTRouterMaker *make) {
-            make.key(@"next");
-        }]();
+        [self routerTest];
     });
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)routerTest{
+    [[CTRouter sharedInstance] ct_makeRouters:^(CTRouterMaker *make) {
+        make.key(@"next");
+    } callback:^(NSDictionary *dic) {
+        NSLog(@"页面回调的Block dic : %@",dic);
+    }]();// 注：此处需要加（）执行跳转
 }
 
 

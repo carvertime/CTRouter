@@ -23,6 +23,11 @@
 }
 
 - (void(^)())ct_makeRouters:(void (^)(CTRouterMaker *))block{
+    return [self ct_makeRouters:block callback:nil];
+}
+
+- (void(^)())ct_makeRouters:(void(^)(CTRouterMaker *make))block
+                   callback:(void(^)(NSDictionary *dic))callback{
     CTRouterMaker *maker = [CTRouterMaker new];
     block(maker);
     return ^(){
@@ -38,6 +43,7 @@
         } else {
             routerVO = maker.routerVO;
         }
+        routerVO.callback = callback;
         [self routerWithRouterVO:routerVO];
     };
 }

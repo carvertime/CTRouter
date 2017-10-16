@@ -18,5 +18,6 @@
 @property (nonatomic, assign) BOOL nib;
 @property (nonatomic, assign) BOOL pop;
 @property (nonatomic, assign) BOOL modal;
+@property (nonatomic, copy) void(^callback)(NSDictionary *dic);
 
 @end

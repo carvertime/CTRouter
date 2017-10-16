@@ -26,6 +26,7 @@
 
 - (void)routerWithRouterVO:(CTRouterVO *)routerVO{
     UINavigationController *nav = [self getNavigationController];
+    NSParameterAssert([nav isKindOfClass:[UINavigationController class]]);
     if (routerVO.pop) {
         [nav popViewControllerAnimated:!routerVO.animationNone];
         return;
@@ -40,6 +41,7 @@
     }
     NSParameterAssert(viewController);
     viewController.extraData = routerVO.param ?: @{};
+    viewController.callback = routerVO.callback;
     if (routerVO.modal) {
         [nav presentViewController:viewController animated:!routerVO.animationNone completion:nil];
     } else {

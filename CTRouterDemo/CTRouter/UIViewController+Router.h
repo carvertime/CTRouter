@@ -17,4 +17,10 @@
  */
 @property (nonatomic, strong) NSDictionary *extraData;
 
+
+/**
+ 页面回调传值的Block
+ */
+@property (nonatomic, copy) void(^callback)(NSDictionary *param);
+
 @end

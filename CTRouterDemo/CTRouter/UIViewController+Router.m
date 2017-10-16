@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 
 static const char CTRouterExtraDataKey;
+static const char CTRouterCallBackKey;
 
 @implementation UIViewController (Router)
 
@@ -19,6 +20,14 @@ static const char CTRouterExtraDataKey;
 
 - (NSDictionary *)extraData{
     return objc_getAssociatedObject(self, &CTRouterExtraDataKey);
+}
+
+- (void)setCallback:(void (^)(NSDictionary *))callback{
+    objc_setAssociatedObject(self, &CTRouterCallBackKey, callback, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (void (^)(NSDictionary *))callback{
+    return objc_getAssociatedObject(self, &CTRouterCallBackKey);
 }
 
 @end

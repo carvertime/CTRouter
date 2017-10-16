@@ -29,6 +29,15 @@
 
 
 /**
+ 跳转页面+回调传值
+
+ @param block 配置属性 key url className
+ @param callback 回调返回值
+ */
+- (void(^)())ct_makeRouters:(void(^)(CTRouterMaker *make))block
+                   callback:(void(^)(NSDictionary *dic))callback;
+
+/**
  返回上一个页面
 
  @param animation 是否有返回动画
