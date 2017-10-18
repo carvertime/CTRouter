@@ -43,6 +43,7 @@
         } else {
             routerVO = maker.routerVO;
         }
+        routerVO.param = maker.routerVO.param.mutableCopy;
         routerVO.callback = callback;
         [self routerWithRouterVO:routerVO];
     };

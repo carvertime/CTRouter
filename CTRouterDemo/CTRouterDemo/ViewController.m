@@ -24,7 +24,7 @@
 
 - (void)routerTest{
     [[CTRouter sharedInstance] ct_makeRouters:^(CTRouterMaker *make) {
-        make.key(@"next");
+        make.key(@"next").param(@{@"test":@"hehe"});
     } callback:^(NSDictionary *dic) {
         NSLog(@"页面回调的Block dic : %@",dic);
     }]();// 注：此处需要加（）执行跳转
