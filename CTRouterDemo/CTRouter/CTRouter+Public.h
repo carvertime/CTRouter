@@ -35,7 +35,7 @@
  @param callback 回调返回值
  */
 - (void(^)())ct_makeRouters:(void(^)(CTRouterMaker *make))block
-                   callback:(void(^)(NSDictionary *dic))callback;
+                   callback:(void(^)(id x))callback;
 
 /**
  返回上一个页面

@@ -44,8 +44,8 @@
     };
 }
 
-- (CTRouterMaker *(^)(NSDictionary *))param{
-    return ^(NSDictionary *param) {
+- (CTRouterMaker *(^)(id))param{
+    return ^(id param) {
         self.routerVO.param = param;
         return self;
     };

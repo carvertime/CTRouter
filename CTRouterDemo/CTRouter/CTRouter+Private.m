@@ -40,7 +40,7 @@
        viewController = [NSClassFromString(routerVO.className) new];
     }
     NSParameterAssert(viewController);
-    viewController.extraData = routerVO.param ?: @{};
+    viewController.extraData = routerVO.param;
     viewController.callback = routerVO.callback;
     if (routerVO.modal) {
         [nav presentViewController:viewController animated:!routerVO.animationNone completion:nil];

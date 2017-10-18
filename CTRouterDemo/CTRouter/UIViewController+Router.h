@@ -15,12 +15,12 @@
 /**
   上个页面 Router 传过来的参数
  */
-@property (nonatomic, strong) NSDictionary *extraData;
+@property (nonatomic, strong) id extraData;
 
 
 /**
  页面回调传值的Block
  */
-@property (nonatomic, copy) void(^callback)(NSDictionary *param);
+@property (nonatomic, copy) void(^callback)(id x);
 
 @end

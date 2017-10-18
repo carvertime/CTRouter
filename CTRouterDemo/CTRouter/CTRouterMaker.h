@@ -13,7 +13,7 @@
 @property (nonatomic, copy) CTRouterMaker *(^key)(NSString *key);
 @property (nonatomic, copy) CTRouterMaker *(^className)(NSString *className);
 @property (nonatomic, copy) CTRouterMaker *(^url)(NSString *url);
-@property (nonatomic, copy) CTRouterMaker *(^param)(NSDictionary *param);
+@property (nonatomic, copy) CTRouterMaker *(^param)(id);
 @property (nonatomic, copy) CTRouterMaker *(^animationNone)(BOOL animationNone);
 @property (nonatomic, copy) CTRouterMaker *(^nib)(BOOL nib);
 @property (nonatomic, copy) CTRouterMaker *(^modal)(BOOL modal);

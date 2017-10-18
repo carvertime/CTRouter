@@ -18,15 +18,15 @@ static const char CTRouterCallBackKey;
     objc_setAssociatedObject(self, &CTRouterExtraDataKey, extraData, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (NSDictionary *)extraData{
+- (id)extraData{
     return objc_getAssociatedObject(self, &CTRouterExtraDataKey);
 }
 
-- (void)setCallback:(void (^)(NSDictionary *))callback{
+- (void)setCallback:(void (^)(id))callback{
     objc_setAssociatedObject(self, &CTRouterCallBackKey, callback, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void (^)(NSDictionary *))callback{
+- (void (^)(id))callback{
     return objc_getAssociatedObject(self, &CTRouterCallBackKey);
 }
 

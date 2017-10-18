@@ -12,12 +12,12 @@
 
 @property (nonatomic, strong) NSString *key;
 @property (nonatomic, strong) NSString *url;
-@property (nonatomic, strong) NSDictionary *param;
+@property (nonatomic, strong) id param;
 @property (nonatomic, strong) NSString *className;
 @property (nonatomic, assign) BOOL animationNone;
 @property (nonatomic, assign) BOOL nib;
 @property (nonatomic, assign) BOOL pop;
 @property (nonatomic, assign) BOOL modal;
-@property (nonatomic, copy) void(^callback)(NSDictionary *dic);
+@property (nonatomic, copy) void(^callback)(id x);
 
 @end
